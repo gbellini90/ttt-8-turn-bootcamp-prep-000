@@ -11,13 +11,13 @@ def input_to_index(input)
 end
 
 def position_taken?(board,index)
-  if board[index]=""
+  if board[index]==""
     false
-  elsif board[index]=" "
+  elsif board[index]==" "
    false
   elsif board[index]==nil 
     false
-  elsif board[index]=="X" || board[index]=="O"
+  elsif board[index]="X" || board[index]="O"
     true 
   end
 end
