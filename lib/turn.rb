@@ -23,11 +23,11 @@ def position_taken?(board,index)
 end
 
 def valid_move?(board, index)
-  if index.between(0,8) && index==nil
-    true 
-    elsif position_taken(board,index)
+  if position_taken?(board,index)
+    false
+  elsif index==nil || !index.between(0,8)
     false
   else
-    false
+    true
   end
 end
